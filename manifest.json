@@ -1,0 +1,37 @@
+{
+    "object": "container", 
+    "slug": "tutoriels-et-articles-les-nouveautes-de-la-version-15-9", 
+    "title": "Tutoriels et articles : les nouveautés de la version 15.9 !", 
+    "introduction": "introduction.md", 
+    "conclusion": "conclusion.md", 
+    "children": [
+        {
+            "object": "extract", 
+            "slug": "section-1", 
+            "title": "Section 1", 
+            "text": "section-1.md"
+        }, 
+        {
+            "object": "extract", 
+            "slug": "section-2", 
+            "title": "Section 2", 
+            "text": "section-2.md"
+        }, 
+        {
+            "object": "extract", 
+            "slug": "section-3", 
+            "title": "Section 3", 
+            "text": "section-3.md"
+        }, 
+        {
+            "object": "extract", 
+            "slug": "section-4", 
+            "title": "Section 4", 
+            "text": "section-4.md"
+        }
+    ], 
+    "version": 2, 
+    "description": "La 12, tu sors ! (enfin)", 
+    "type": "ARTICLE", 
+    "licence": "Tous droits réservés"
+}
