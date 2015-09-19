@@ -7,9 +7,9 @@
     "children": [
         {
             "object": "extract", 
-            "slug": "section-1", 
-            "title": "Section 1", 
-            "text": "section-1.md"
+            "slug": "la-guerre-des-clans", 
+            "title": "La guerre des clans", 
+            "text": "la-guerre-des-clans.md"
         }, 
         {
             "object": "extract", 
