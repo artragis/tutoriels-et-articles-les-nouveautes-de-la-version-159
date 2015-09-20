@@ -7,16 +7,16 @@
     "children": [
         {
             "object": "extract", 
-            "slug": "la-guerre-des-clans", 
-            "title": "La guerre des clans", 
-            "text": "la-guerre-des-clans.md"
+            "slug": "cest-lhistoire-de-la-vie", 
+            "title": "C'est l'histoire de la vie ...", 
+            "text": "cest-lhistoire-de-la-vie.md"
         }, 
         {
             "object": "extract", 
-            "slug": "section-2", 
-            "title": "Section 2", 
-            "text": "section-2.md"
-        }, 
+            "slug": "quest-ce-qui-cest-passe", 
+            "title": "Qu'est ce qui c'est passé ?", 
+            "text": "quest-ce-qui-cest-passe.md"
+        },
         {
             "object": "extract", 
             "slug": "section-3", 
