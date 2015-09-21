@@ -1,6 +1,7 @@
 Après une version 15.7 gaston (non gaston n'est pas un agrume, c'est juste 
-qu'il est en retard) qui venait stabiliser le site, la 15.8 NOM nous 
-renvoie vers les cieux de l'ajout de fonctionnalités (et lesquelles !).
+qu'il est en retard) qui venait stabiliser le site, nous repartons vers les 
+cieux de l'ajout de fonctionnalités (et lesquelles !) avec la 15.9 NOM, publiée 
+aujourd'hui.
 
 Nous sommes bien loin de battre le record des tickets GitHub fermés, détennu 
 par la version [cédrat (15.6)](https://zestedesavoir.com/articles/263/nouveautes-de-la-version-156-cedrat/) 
