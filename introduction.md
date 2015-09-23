@@ -18,7 +18,9 @@ encore la validation. Mais pas seulement refactorisé : également corrigé,
 puis testé en profondeur. Tout ce travail a été réalisé dans le cadre d'une 
 ZEP, la [douzième du nom](https://zestedesavoir.com/forums/sujet/846/zep-12-refonte-du-principe-des-tutoriels-et-articles/) !
 
-TODO : ce qu'on va aborder dans cette article.
+Dans la suite, nous nous intéresserons aux origines de cette ZEP, puis nous 
+présenterons les diverses fonctionnalités qu'elle introduit, avant de jeter un 
+oeil vers les mutliples pistes, dont des ZEPs, qu'elle permet d'explorer.
 
 [[i]]
 | Pour éviter les confusions, nous utiliserons « Ancien module » pour parler... 
