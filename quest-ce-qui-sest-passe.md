@@ -1,63 +1,153 @@
+Honnêtement, j'ignore quoi écrire comme texte ici, donc je vais mettre **n'importe quoi**. Vous ne m'en voulez pas j'espère ?
+
+Le cas échéant, je vous invite cordialement à rager dans votre coin : les cacas nerveux, c'est pas pour les zesteux !
+
 # Un travail de fond ...
 
-Beaucoup de travail a tout d'abord été fait sur le code en lui même, avec assez peu de résultat visible "à l’œil nu", mais essentiel pour la suite du dévellopement :)
+Beaucoup de travail a tout d'abord été fait sur le code en lui-même, avec 
+assez peu de résultats visibles par les membres, mais essentiels pour la suite 
+du développement.
 
-En effet, comme énoncé plus haut, la ZEP-12 part du constat qu'un article et un tutoriel ont énormément de choses en commun, et qu'il n'y avait donc pas de raisons de les traiter différemment. Il était donc d'une part nécessaire de repenser les modules pour qu'ils ne fassent plus qu'un. But du jeu : aucune duplications ! Ce qui a donc été réalisé permettra dans le futur d'implémenter plus facilement des fonctionnalités, qui seront directement disponibles pour les articles et les tutoriels. Le code est même assez souple pour pouvoir accueillir d'autres types de contenus (pourquoi pas [des tribunes](https://zestedesavoir.com/forums/sujet/976/zep-13-tribune-libre/) ?). Il s'agit donc bien de faciliter la vie des développeurs.
+En effet, comme énoncé plus haut, la ZEP-12 part du constat qu'un article et 
+un tutoriel ont énormément de propriétés en commun, et qu'il n'y avait donc 
+pas de raison de les traiter différemment. Il était donc d'une part nécessaire 
+de repenser les modules pour qu'ils ne fassent plus qu'un. But du jeu : aucune 
+duplication. Ce qui a été réalisé permettra donc dans le futur d'implémenter 
+plus facilement des fonctionnalités, qui seront directement disponibles pour 
+les articles et les tutoriels. Le code est même assez souple pour pouvoir 
+accueillir d'autres types de contenus, tels que [des tribunes libres](https://zestedesavoir.com/forums/sujet/976/zep-13-tribune-libre/). 
+Il s'agit donc bien en premier lieu de faciliter la vie des développeurs.
 
-Par ailleurs, vous n'êtes pas sans savoir que notre module de rédaction utilise le célèbre [gestionnaire de version Git](https://fr.wikipedia.org/wiki/Git)[^git]. Pour les auteurs, cela se traduit par la possibilité de comparer différentes modifications apportées, via l'outil d'historique des versions :
-
-[^git]: pour ceux que ça intéresse, Eskimon a écrit [un très bon tutoriel sur le sujet](https://zestedesavoir.com/tutoriels/649/refaire-lhistoire-avec-git/).
+Par ailleurs, vous n'êtes pas sans savoir que notre module de rédaction 
+utilise le célèbre gestionnaire de version 
+[Git](https://git-scm.com/book/en/v2). Pour les auteurs, cela se traduit par 
+la possibilité de comparer différentes modifications apportées, via l'outil 
+d'historique des versions :
 
 ![Fonctionnalité de diff](http://zestedesavoir.com/media/galleries/1426/d78cdc66-bb0d-4afd-b1b8-06f5eade90b9.png.960x960_q85.png)
-Figure: L'outil d'historique des version en action dans la ZEP-12 avec un exemple de correction, une application directe de l'utilisation de Git. À noter que cette page a été grandement améliorée [grâce à yapper-git](https://github.com/artragis/zds-site/pull/215).
+Figure: Une application directe de l'utilisation de Git : l 'outil d'historique des versions en action dans la ZEP-12 avec un exemple de correction. À noter que cette page a été grandement améliorée par [yapper-git](https://github.com/artragis/zds-site/pull/215).
 
-L'ancien module avait également pour défaut de stocker les informations deux fois (une fois en base de donnée et une fois sur le disque), ce qui a entrainé des bugs par le passé dont la correction n'était pas très satisfaisante. Il a été choisi de se reposer sur Git (et donc le stockage sur le disque) dès que celà était possible et de soulager la base de donnée tout en profitant des avantages offerts par le gestionnaire de version. Ce choix a également un défaut, c'est qu'il requiert assez bien d'opérations de lecture/écriture (I/O, dans le langage des programmeurs) sur le disque, qui sont relativement couteuse en terme de temps. Une attention particulière a donc du être portée sur ce point, même si des améliorations sont probablement encore possible. À priori, les performances de ce nouveau module sont même équivalentes à l'ancienne !
+L'ancien module avait également pour défaut de stocker les informations deux 
+fois : une fois en base de données et une autre dans des fichiers, ce qui a 
+entraîné par le passé des bugs dont la correction n'était pas très 
+satisfaisante. Il a donc été choisi de se reposer sur Git (et donc le stockage 
+sur le disque) dès que cela était possible et de soulager la base de données 
+tout en profitant des fonctionnalités offertes par le gestionnaire de version. 
+Toutefois, cette option a un défaut : elle requiert un nombre important 
+d'opérations de lecture/écriture (*IO*, pour les programmeurs) sur le disque, 
+lesquelles sont relativement coûteuses en temps. Une attention particulière a 
+donc du être portée sur ce point, même si des améliorations sont probablement 
+encore possibles. À priori, les performances de ce nouveau module sont mêmes 
+équivalentes à celles de l'ancien.
 
-Toutes ces modifications n'ont pas été sans mal, et par exemple, le module de recherche a dû être repensé pour accueillir cette manière de faire. C'est Hugo qui c'est occupé, avec brio, de cette partie, malgré que le module de recherche ne permet initialement pas d'indexer des fichiers. Grâce à lui, la recherche sur les contenus est réellement améliorée !
+Toutes ces modifications n'ont pas été sans mal et, par exemple, le module de 
+recherche a dû être repensé pour coïncider avec cette nouvelle philosophie. En 
+effet, ce module ne permettait initialement pas d'indexer des fichiers, 
+quasiment utilisés exclusivement par le nouveau module rédactionnel. Hugo est 
+donc passé par là et a amélioré avec brio la recherche de contenus.
 
 # ... Et de forme !
 
-Mais la ZEP-12 n'améliore pas seulement la vie des développeurs, elle est aussi pensée pour les auteurs ! Puisque [la missions de Zeste de Savoir](https://zestedesavoir.com/pages/association/) est de « promouvoir le partage de connaissances à travers des ressources pédagogiques gratuites », il est essentiel de proposer un module qui soit le plus efficace et simple d'utilisation possible. Dès lors, et sans être exhaustif, voici une petite liste des améliorations apportées par ce nouveau module tout neuf.
+Mais les avantages de la ZEP-12 ne se restreignent pas aux développeurs, et 
+les auteurs gagnent également au change. En effet, puisque 
+[la missions de Zeste de Savoir](https://zestedesavoir.com/pages/association/) 
+est de « promouvoir le partage de connaissances à travers des ressources 
+pédagogiques gratuites », il est essentiel de proposer un module qui soit le 
+plus efficace et simple d'utilisation possible. Dès lors, et sans être 
+exhaustif, nous avons le plaisir de vous présenter les fonctionnalités 
+introduites par ce module tout neuf et dont les auteurs pourront bénéficier 
+directement.
 
-Premièrement, une grande vague d'**uniformisation de l'interface et des fonctionnalités** a eu lieu. Désormais, tout les contenus possèdent une galerie, ce qui n'était pas le cas auparavant. D'autres fonctionnalités des tutoriels sont également apparues pour les articles, telles que la mise en bêta (ce qui permettra aux auteurs de ne plus avoir à écrire le message eu même dans [la zone bêta](https://zestedesavoir.com/forums/communaute/beta-zone/)), mais aussi l'apparition de [la demande d'aide pour les articles](https://zestedesavoir.com/contenus/aides/?type=article).
+Premièrement, une grande vague d'**uniformisation de l'interface et des fonctionnalités** 
+a eu lieu : tous les contenus possèdent une galerie, tous peuvent être mis en 
+bêta et tous bénéficient de la page d'aide aux auteurs.
 
-![Les galeries liées au contenu, une petite amélioration graphique pour marquer le lien entre les deux](http://zestedesavoir.com/media/galleries/1426/57b4587d-87b4-411b-91f9-4e616f78d683.png.960x960_q85.png)
+![Les galeries liées au contenu, une petite amélioration graphique pour marquer le lien entre les premières et les secondes](http://zestedesavoir.com/media/galleries/1426/57b4587d-87b4-411b-91f9-4e616f78d683.png.960x960_q85.png)
 
-Quelques changements sont aussi à noter du côté de la structure des contenus. Tout d'abord, **le mot "section" remplace désormais les "extraits"**, pour être plus simples à appréhender. Par ailleurs, un article contient désormais plusieurs de ces sections, comme vous avez pu le constater ici. Ce découpage rend plus facile l'édition, permet un meilleur référencement et donne droit à la création d'un sommaire[^seo]. À noter que durant le processus de migration à la ZEP-12, un script c'est ainsi chargé de repérer tout les titres présent dans les articles afin de découper ceux-ci en sections, vous n'avez donc rien à faire  ! :)
+Quelques changements sont aussi à noter du côté de la structure des contenus. 
+Tout d'abord, **le mot « section » remplace désormais le terme « extrait »**, 
+le premier étant plus simple à appréhender. Par ailleurs, un article peut 
+désormais contenir plusieurs de ces sections, comme vous avez pu le constater 
+en ce moment même. Ce découpage rend plus facile l'édition, permet un meilleur 
+référencement et donne droit à la création d'un sommaire[^seo]. À noter que 
+durant le processus de migration vers la ZEP-12, un script s'est chargé de 
+repérer tous les titres présents dans les articles et de découper ceux-ci en 
+sections : vous n'avez qu'à admirer le résultat !
 
-[^seo]: en effet, c'est désormais un titre de niveau 2 (`<h2>`) qui est employé à la place d'un titre de niveau 3, ce qui lui donne plus de poids. La présence du sommaire a également un impact sur le référencement.
+[^seo]: en effet, l'ajout de sections revient à ajouter un niveau de titres, 
+lesquels ont du poids pour les moteurs de recherche. La présence du sommaire a 
+également un impact bénéfique sur le référencement.
 
-De nouveaux types de structures sont également permises, puisque la "taille" d'un tutoriel n'est plus fixé à sa création et évolue à votre convenance (il n'est bien entendu pas possible de faire des chapitres dans les articles). Ainsi, **les moyens-tutoriels sont enfin possibles**, ce qui n'oblige plus à créer des tutoriels ne contenant qu'une partie, mais il est également possible de réaliser des structures *hydrides*. Ainsi, si on prend l'exemple hypothétique d'un tutoriel qui traiterai d'une bibliothèque en programmation, on pourrait imaginer quelque chose du genre :
+En outre, les contraintes sur la structure se sont considérablement assouplies.
+Désormais, vous disposez de trois types de conteneurs : les *parties*, sans 
+parents et avec un ou des enfants, les *chapitres*, avec un parent (une partie)
+et des (ou un) enfants, et une section, sans enfants. À partir de là, vous 
+pouvez créer, supprimer et déplacer des conteneurs à gogo, du moment que vous 
+respectez les contraintes d'imbrication (une partie contenant un chapitre 
+comportant une section ne peut être déplacée en tant qu'enfant, ce qui créerait
+une conteneur de niveau 4). Notamment, il est possible de créer des 
+moyens-tutos, ainsi que des tutoriels hybrides :
 
 ```
-+ Introduction (partie)
-    + Petite histoire (section)
-    + Installation (section)
-    + Tester ! (section)
-+ Prise en main (partie)
-    + Prise en main (chapitre)
-        + Fonctions de base (section)
++ Partie 1 
+    + Section 1.1
+    + Section 1.2 
+    + Section 1.3 
++ Partie 2
+    + Chapitre 2.1
+        + Section 2.1.1
         + ...
 ```
-Code: Structure *hydride* ou la première partie contient directement des sections, tandis que la seconde est découpée en chapitres.
+Code: Structure *hydride* où la première partie contient directement des sections, tandis que la seconde est découpée en chapitres.
 
-Vous pouvez donc laisser libre cours à votre imagination et créativité, même si l'équipe de validation n'acceptera pas les abus de la déstructuration des contenus. Il faut en effet garder une cohérence dans ses écrits et l'équipe bénévole est là pour veiller au grain !
+Par contre, un conteneur est homogène. Le cas suivant ne fonctionne donc pas.
 
-À noter que "partie" désigne désormais tout ce qui est au "premier niveau", même s'il contient des sections, tandis que "chapitre" désigne tout ce qui est au "second niveau" (et qui contient forcément des sections).
+```
++ Partie
+    + Chapitre
+        + Section
+    + Section
+```
 
-Tant qu'on en est dans les bonnes nouvelles, sachez également que l'édition externe est beaucoup plus simple, car **l'import d'archives à été fortement amélioré**. Comme vous pouvez [le constater par vous-même](https://zestedesavoir.com/contenus/importer/archive/nouveau/), il est désormais possible d'importer une archive pour créer un nouveau tutoriel ou article, mais également pour le mettre à jour (et contrairement à l'ancien système, pas besoin que la structure soit identique). Et pour faciliter encore un peu la possibilité d'édition externe, on peut désormais **importer directement les images avec le contenu**, et le texte sera mis à jour en conséquent !
+Vous pouvez donc laisser libre cours à votre imagination et créativité, même 
+si l'équipe de validation n'acceptera pas les abus de déstructuration des 
+contenus. Il faut en effet garder une cohérence dans ses écrits et l'équipe 
+bénévole est là pour veiller au grain !
+
+Tant qu'on en est aux bonnes nouvelles, sachez également que l'édition externe 
+est beaucoup plus simple, car **l'import d'archives a été fortement amélioré**. 
+Comme vous pouvez [le constater par vous-même](https://zestedesavoir.com/contenus/importer/archive/nouveau/), 
+il est désormais possible d'importer une archive pour créer un nouveau 
+tutoriel ou article, mais également pour le mettre à jour (et contrairement à 
+l'ancien système, la structure n'a pas à être identique). Et pour faciliter 
+encore un peu la possibilité d'édition externe, on peut désormais **importer 
+directement les images avec le contenu**, et le texte sera mis à jour en 
+conséquence.
 
 ![Import d'archive](http://zestedesavoir.com/media/galleries/1426/981c8b17-c1b9-4b09-a75a-caf3ee8f0c50.png.960x960_q85.png)
 Figure: L'importation des archives est amélioré, il est même possible d'importer des images
 
-Une des évolutions futures pourrait alors être de créer un éditeur externe qui créerait directement ladite archive à importer ensuite dans le site. Avis aux amateurs ! 
+Une des évolutions futures pourrait alors être de créer un éditeur externe qui 
+créerait directement ladite archive à importer ensuite dans le site. Avis aux 
+amateurs ! 
 
-Finissons ce petit tour d'horizon, avec l'**amélioration des fonctionnalités de déplacement** grâce à un travail monstre effectué par artragis, ce qui permet désormais de déplacer les sections entre chapitres, mais aussi de déplacer les chapitre eux-mêmes, dans la limite du possible ! Si vous aviez un *big*-tuto que vous aimeriez transformer en moyen-tuto, c'est possible grâce à cette fonctionnalité !
+Finissons ce petit tour d'horizon, avec l'**amélioration des fonctionnalités 
+de déplacement** grâce à un travail monstre effectué par artragis, ce qui 
+permet désormais de déplacer les sections entre chapitres, mais aussi de 
+déplacer les chapitre eux-mêmes, dans la limite du possible ! Si vous aviez un 
+*big*-tuto que vous aimeriez transformer en moyen-tuto, c'est possible grâce à 
+cette fonctionnalité !
 
 ![Déplacement d'un extrait](http://zestedesavoir.com/media/galleries/1426/35575d94-9cd5-4da7-985e-c168a80a5eca.png.960x960_q85.jpg)
 Figure: Illustration du déplacement d'un extrait entre les chapitres
 
-En vrac, on peut encore citer une amélioration du processus de publication (avec, entre autre, un système pour que les publications qui ont échouées n'affectent plus les versions déjà en ligne), un nettoyage de certaines erreurs générées par le précédent module, et d'autres [que vous pouvez retrouver dans la documentation du module](http://zds-site.readthedocs.org/fr/latest/back-end/contents.html) (qui décrit de manière plus complète la philosophie et les implications de ce nouveau module).
+En vrac, on peut encore citer une amélioration du processus de publication 
+(avec, entre autre, un système pour que les publications qui ont échoué 
+n'affectent plus les versions déjà en ligne), un nettoyage de certaines 
+erreurs générées par le précédent module, et d'autres 
+[que vous pouvez retrouver dans la documentation du module](http://zds-site.readthedocs.org/fr/latest/back-end/contents.html) 
+(qui décrit de manière plus complète la philosophie et les implications de ce 
+nouveau module).
 
 # Et la suite ?
 
