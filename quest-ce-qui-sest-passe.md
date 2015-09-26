@@ -82,11 +82,11 @@ En outre, les contraintes sur la structure se sont considérablement assouplies.
 Désormais, vous disposez de trois types de conteneurs : les *parties*, sans 
 parents et avec un ou des enfants, les *chapitres*, avec un parent (une partie)
 et des (ou un) enfants, et une section, sans enfants. À partir de là, vous 
-pouvez créer, supprimer et déplacer des conteneurs à gogo, du moment que vous 
-respectez les contraintes d'imbrication (une partie contenant un chapitre 
-comportant une section ne peut être déplacée en tant qu'enfant, ce qui créerait
-une conteneur de niveau 4). Notamment, il est possible de créer des 
-moyens-tutos, ainsi que des tutoriels hybrides :
+pouvez créer, supprimer et déplacer des conteneurs comme il vous sied, du 
+moment que vous respectez les contraintes d'imbrication (une partie contenant 
+un chapitre comportant une section ne peut être déplacée en tant qu'enfant, ce 
+qui créerait une conteneur de niveau 4). Notamment, il est possible de créer 
+des moyens-tutos, ainsi que des tutoriels hybrides :
 
 ```
 + Partie 1 
@@ -125,11 +125,10 @@ directement les images avec le contenu**, et le texte sera mis à jour en
 conséquence.
 
 ![Import d'archive](http://zestedesavoir.com/media/galleries/1426/981c8b17-c1b9-4b09-a75a-caf3ee8f0c50.png.960x960_q85.png)
-Figure: L'importation des archives est amélioré, il est même possible d'importer des images
+Figure: L'importation des archives est améliorée. Il est même possible d'importer des images.
 
-Une des évolutions futures pourrait alors être de créer un éditeur externe qui 
-créerait directement ladite archive à importer ensuite dans le site. Avis aux 
-amateurs ! 
+Il est alors tout à fait possible de créer un éditeur externe qui génèrerait 
+directement ladite archive à importer ensuite sur le site. Avis aux amateurs ! 
 
 Finissons ce petit tour d'horizon, avec l'**amélioration des fonctionnalités 
 de déplacement** grâce à un travail monstre effectué par artragis, ce qui 
