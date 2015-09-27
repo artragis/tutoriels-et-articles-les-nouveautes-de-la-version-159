@@ -19,15 +19,9 @@
         },
         {
             "object": "extract", 
-            "slug": "section-3", 
-            "title": "Section 3", 
-            "text": "section-3.md"
-        }, 
-        {
-            "object": "extract", 
-            "slug": "section-4", 
-            "title": "Section 4", 
-            "text": "section-4.md"
+            "slug": "vers-linfini-et-au-dela", 
+            "title": "Vers l'infini, et au-delà !", 
+            "text": "vers-linfini-et-au-dela.md"
         }
     ], 
     "version": 2, 
