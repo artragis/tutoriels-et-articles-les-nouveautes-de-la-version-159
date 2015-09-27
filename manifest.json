@@ -13,8 +13,8 @@
         }, 
         {
             "object": "extract", 
-            "slug": "quest-ce-qui-sest-passe", 
-            "title": "Qu'est-ce qui s'est passé ?", 
+            "slug": "que-sest-il-passe.md", 
+            "title": "Que s'est-il passé ?", 
             "text": "que-sest-il-passe.md"
         },
         {
