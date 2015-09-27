@@ -8,14 +8,14 @@
         {
             "object": "extract", 
             "slug": "cest-lhistoire-de-la-vie", 
-            "title": "C'est l'histoire de la vie ...", 
+            "title": "C'est l'histoire de la vie...", 
             "text": "cest-lhistoire-de-la-vie.md"
         }, 
         {
             "object": "extract", 
-            "slug": "quest-ce-qui-cest-passe", 
-            "title": "Qu'est ce qui c'est passé ?", 
-            "text": "quest-ce-qui-cest-passe.md"
+            "slug": "quest-ce-qui-sest-passe", 
+            "title": "Qu'est-ce qui s'est passé ?", 
+            "text": "quest-ce-qui-sest-passe.md"
         },
         {
             "object": "extract", 
