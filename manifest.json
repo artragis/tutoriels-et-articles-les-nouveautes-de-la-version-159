@@ -1,4 +1,4 @@
-{
+﻿{
     "object": "container", 
     "slug": "tutoriels-et-articles-les-nouveautes-de-la-version-15-9", 
     "title": "Tutoriels et articles : les nouveautés de la version 15.9 !", 
@@ -15,7 +15,7 @@
             "object": "extract", 
             "slug": "quest-ce-qui-sest-passe", 
             "title": "Qu'est-ce qui s'est passé ?", 
-            "text": "quest-ce-qui-sest-passe.md"
+            "text": "que-sest-il-passe.md"
         },
         {
             "object": "extract", 
