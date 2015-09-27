@@ -1,7 +1,3 @@
-Honnêtement, j'ignore quoi écrire comme texte ici, donc je vais mettre **n'importe quoi**. Vous ne m'en voulez pas j'espère ?
-
-Le cas échéant, je vous invite cordialement à rager dans votre coin : les cacas nerveux, c'est pas pour les zesteux !
-
 # Un travail de fond ...
 
 Beaucoup de travail a tout d'abord été fait sur le code en lui-même, avec 
