@@ -143,22 +143,3 @@ erreurs générées par le précédent module, et d'autres
 [que vous pouvez retrouver dans la documentation du module](http://zds-site.readthedocs.org/fr/latest/back-end/contents.html) 
 (qui décrit de manière plus complète la philosophie et les implications de ce 
 nouveau module).
-
-# Et la suite ?
-
-Même si il s'agit déjà là d'une grande avancée dans le code de Zeste de Savoir, il reste encore bien des choses à faire, et ce module est probablement amené à encore bien évoluer dans le futur !
-
-Ce module n'est également pas exempt de défaut, qui sont autant de choix qui ont du être fait (même si il a parfois été difficile de les respecter) : il a par exemple déjà été mentionné que se baser sur la lecture et l'écriture de fichiers est un point critique. Par exemple, il est nécéssaire de créer un fichier par section, ce qui requiert autant de lectures lorsque ces sections doivent être affichées. Par ailleurs, la phase de résolution d'URL (trouver quoi afficher) ne se reposant plus sur la base de donnée, elle nécéssite systématiquement la lecture du fichier contenant la structure du contenu (le `manifest.json`). Il a par ailleurs été très difficile de maintenir les [propritétés ACID](https://fr.wikipedia.org/wiki/Propriétés_ACID) (deux objets ne peuvent pas porter le même nom) et le référencement sur concernant ce module (ainsi, toutes les URLs de vos contenus on changés, mais des redirections ont dû être mises en place afin que les anciennes soient toujours valides).
-
-Sur une note plus positive, plusieurs ZEPs attendaient tranquilement l'implémentation de la ZEP-12, ce qui est désormais chose faite :
-
-+ La [ZEP-05](https://zestedesavoir.com/forums/sujet/676/zep-05-refonte-du-traitement-markdown-pour-lexport/), qui doit améliorer l'exportation de nos contenus en PDF, HTML ou EPUB, point qui n'as pas du tout été touché durant la ZEP-12 ;
-+ La [ZEP-08](https://zestedesavoir.com/forums/sujet/724/zep-08-utilisation-de-git-pour-gerer-les-tutos-et-articles/) , qui s'interoge sur l'usage de fonctionnalités plus avancées de Git pour encore améliorer l'édition ;
-+ La [ZEP-11](https://zestedesavoir.com/forums/sujet/3084/zep-11-interface-de-statistiques-sur-les-tutoriels/), qui implémenterait des statistiques pour l'auteur ;
-+ La  [ZEP-13](https://zestedesavoir.com/forums/sujet/976/zep-13-tribune-libre/), qui se propose d'ajouter un troisième type de contenu, les "tribunes" ;
-+ Les Les ZEPS [16](https://zestedesavoir.com/forums/sujet/1243/zep-16-page-de-proposition-de-corrections/) et [20](https://zestedesavoir.com/forums/sujet/2042/zep-20-relecture-des-tutos-par-les-pairs/), qui est une initiative pour améliorier le confort de validation via la relecture par des pairs et la propositions de corrections ;
-+ la [ZEP-24](https://zestedesavoir.com/forums/sujet/2251/zep-24-refonte-et-enrichissement-des-notifications/), qui permetrai de repenser les notifications de manère plus efficace ;
-+ Les ZEPS [15](https://zestedesavoir.com/forums/sujet/1082/zep-15-navigation-a-facettes-a-travers-le-site/), [31](https://zestedesavoir.com/forums/sujet/3149/zep-31-les-parcours-de-connaissances/) et [32](https://zestedesavoir.com/forums/sujet/3152/zep-32-cartographie-des-contenus/), qui tentent de repenser la manière dont on navigue entre les contenus ;
-+ Les ZEPs [33](https://zestedesavoir.com/forums/sujet/3992/zep-33-template-de-tutoriels-et-editorialisation/) et [34](https://zestedesavoir.com/forums/sujet/4010/zep-34-template-de-tutoriels/), qui viserait guider les auteurs dans la création de leurs contenus.
-
-Autant de sujets qui n'attendent que votre avis et votre aide ;)
