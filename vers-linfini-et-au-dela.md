@@ -1,3 +1,5 @@
+# Un mieux, mais seulement un début
+
 Même si il s'agit déjà là d'une grande avancée dans le code de Zeste de 
 Savoir, il reste encore bien des choses à faire, et ce module sera probablement 
 amené à encore bien évoluer.
@@ -11,11 +13,27 @@ affichées. Par ailleurs, la phase de résolution d'URL (trouver quoi afficher),
 ne reposant plus sur la base de données, nécessite systématiquement la lecture
 du fichier contenant la structure du contenu (le `manifest.json`). 
 
+De même, la ZEP-12 n'apporte pas de réelle révolution dans l'interface. Ainsi, pour la majorité
+des utilisateurs, le travail réalisé sur le fond semblera invisible, peut être même insuffisant.
+Ce travail de fond était d'une ampleur si importante que malgré 9 mois de développement, certaines
+*killer features* tant pour l'interface que pour la vie du site n'ont pas pu être développées, à notre
+grande frustration.
+
+Le plus gros problème, en terme d'interface restera que pour vous donner la possibilité de faire
+un *tutoriel moyen* et autres structures plus souples,
+nous avons retiré le champ qui auparavant vous permettait de sélectionner "mini tuto" ou "big tuto".
+Cela signifie que nous ne vous guidons plus dans la rédaction d'un contenu.
+
+Ce manque de "révolution" se fera aussi sentir du côté des validateurs qui feront encore face
+à de longues attentes lors de la publication d'un gros tutoriel.
+
 Il a par ailleurs été très difficile de maintenir les 
 [propritétés ACID](https://fr.wikipedia.org/wiki/Propriétés_ACID) (deux objets 
-ne peuvent pas porter le même nom) et le référencement concernant ce module 
+ne peuvent pas porter le même nom par exemple) et le référencement concernant ce module 
 (par exemple, toutes les URLs de vos contenus ont changé, et des redirections 
 ont dû être mises en place afin que les anciennes soient toujours valides).
+
+# Une fenêtre sur le monde
 
 Sur une note plus positive, plusieurs ZEP attendaient tranquillement 
 l'implémentation de la douzième du nom, ce qui est désormais chose faite. 
@@ -30,3 +48,12 @@ l'implémentation de la douzième du nom, ce qui est désormais chose faite.
 + Les ZEPs [33](https://zestedesavoir.com/forums/sujet/3992/zep-33-template-de-tutoriels-et-editorialisation/) et [34](https://zestedesavoir.com/forums/sujet/4010/zep-34-template-de-tutoriels/), qui viserait guider les auteurs dans la création de leurs contenus.
 
 Autant de sujets qui n'attendent que votre avis et votre aide.
+
+Enfin, cette ZEP nous a permis de mettre à jour d'autres chantiers très importants pour le site tels que:
+
+- la validation partielle des contenus (on ne propose à la validation qu'une partie d'un tutoriel),
+- une forte amélioration de l'éditeur du site,
+- une meilleure présentation des pages communautaires (béta, page d'aide)...
+
+Zeste de savoir n'a qu'un an et continue de prendre son envol, la ZEP-12 n'est ici qu'un souffle favorable à cet envol
+mais quel souffle !
