@@ -11,7 +11,8 @@ se mirent à bougonner, de manière assez compréhensible toutefois.
 
 Épris d'égalité et à l'âme pacifiste, deux courageux (ou fous, selon les points 
 de vue) développeurs, artragis et pierre_24, se mirent alors en tête de 
-remédier au conflit : ainsi naquit la [ZEP-12](https://zestedesavoir.com/forums/sujet/846/zep-12-refonte-du-principe-des-tutoriels-et-articles/), 
+remédier au conflit : ainsi naquit la 
+[ZEP-12](https://zestedesavoir.com/forums/sujet/846/zep-12-refonte-du-principe-des-tutoriels-et-articles/), 
 le 24 juillet 2014. 
 
 Pour ceux qui vivraient dans une grotte, une ZEP est un texte écrit par un 
@@ -64,12 +65,16 @@ Zeste de Savoir
 [^et_de_1000]: Oui, 1000 *commits*, pas un de plus, pas un de moins. Petit 
 rappel : un *commit* est une modification atomique du code.
 
-[^lignes]: Pour être précis : 14 135 lignes ajoutées et 1236 supprimées. Pour 
-le moment, les anciens modules sont toujours disponibles, ce qui explique le 
+Et même avec ça, plus de 50 *bugfixes* ont du être réalisés, poussant le nombre de release candidates à 5 !
+Autant dire que cette *release* a demandé énormément d'investissement.
+
+[^lignes]: Pour être précis : 14 135 lignes ajoutées et 1236 supprimées par 
+[la *pull request* initiale](https://github.com/zestedesavoir/zds-site/pull/2956). 
+Pour le moment, les anciens modules sont toujours disponibles, ce qui explique le 
 faible nombre de lignes supprimées, mais il est bien entendu prévu de les 
 enlever à terme.
 
-![« «»(image réalisée par Blackline)](https://zestedesavoir.com/media/galleries/877/6943c548-1a50-45e4-85de-e3967a0e4444.png.960x960_q85.png)
+![(image réalisée par Blackline)](https://zestedesavoir.com/media/galleries/877/6943c548-1a50-45e4-85de-e3967a0e4444.png.960x960_q85.png)
 
 Avec cette implémentation de la ZEP-12, toute nouvelle fonctionnalité et tout 
 bug seront corrigés immédiatement au niveau des tutoriels *et* des articles, 

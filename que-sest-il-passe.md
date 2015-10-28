@@ -143,3 +143,8 @@ erreurs générées par le précédent module, et d'autres
 [que vous pouvez retrouver dans la documentation du module](http://zds-site.readthedocs.org/fr/latest/back-end/contents.html) 
 (qui décrit de manière plus complète la philosophie et les implications de ce 
 nouveau module).
+
+Afin de faciliter les retours sur ce nouveau module sans *pourrir* les commentaires si dessous, deux sujets ont été créés :
+
+- [Ce sujet](http://zestedesavoir.com/forum/) vous permetra d'échanger sur cette nouvelle fonctionnalité : si vous avez des suggestions d'amélioration ou des choses que vous n'aimez pas, c'est là qu'il faut le faire.
+- [Ce sujet](http://zestedesavoir.com/forum/) vous permettra **uniquement** de faire part de problèmes induit par la migration. En effet, certains contenus ont pu être mal migrés (même si un maximum a été fait pour que ça n'arrive pas). Il vous permettra d'avoir un contact direct avec les personnes capables de corriger les éventuelles erreurs, et doit donc être employé uniquement à cette effet.
