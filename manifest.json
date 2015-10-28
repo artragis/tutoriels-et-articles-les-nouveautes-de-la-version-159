@@ -13,19 +13,19 @@
         }, 
         {
             "object": "extract", 
-            "slug": "que-sest-il-passe.md", 
+            "slug": "que-sest-il-passe", 
             "title": "Que s'est-il passé ?", 
             "text": "que-sest-il-passe.md"
-        },
+        }, 
         {
             "object": "extract", 
-            "slug": "vers-linfini-et-au-dela", 
-            "title": "Vers l'infini, et au-delà !", 
-            "text": "vers-linfini-et-au-dela.md"
+            "slug": "vers-linfini-et-lau-dela", 
+            "title": "Vers l'infini et l'au delà !", 
+            "text": "vers-linfini-et-lau-dela.md"
         }
     ], 
     "version": 2, 
     "description": "La 12, tu sors ! (enfin)", 
     "type": "ARTICLE", 
-    "licence": "CC BY"
+    "licence": "Tous droits réservés"
 }
