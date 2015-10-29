@@ -66,14 +66,17 @@ Zeste de Savoir
 [^et_de_1000]: Oui, 1000 *commits*, pas un de plus, pas un de moins. Petit 
 rappel : un *commit* est une modification atomique du code.
 
-Et même avec ça, plus de 50 *bugfixes* ont du être réalisés, poussant le nombre de *release* candidates à 5 !
-Autant dire que cela a demandé énormément d'investissement de la part de l'équipe de *dev*.
-
 [^lignes]: Pour être précis : 14 135 lignes ajoutées et 1236 supprimées par 
 [la *pull request* initiale](https://github.com/zestedesavoir/zds-site/pull/2956). 
 Pour le moment, les anciens modules sont toujours disponibles, ce qui explique le 
 faible nombre de lignes supprimées, [mais il est bien entendu prévu de les 
 enlever à terme](https://github.com/zestedesavoir/zds-site/pull/3119).
+
+Et même avec ça, plus de 50 *bugfixes* on dû être réalisés, poussant le nombre de *release* candidates[^RC] à 5 
+(quand on vous dit que la bêta, ça sert à quelque chose) !
+Autant dire que cela a demandé énormément d'investissement de la part de l'équipe de *dev*.
+
+[^RC]: Une *release* candidate, est, d'[après Wikipédia](https://fr.wikipedia.org/wiki/Version_d%27un_logiciel#Version_admissible_ou_pre-release_ou_Release_Candidate), « une version du logiciel qui correspond, du côté pratique, à la version "finale" [...] du dit logiciel. Elle est mise à disposition à des fins de « tests de dernière minute » visant à déceler les toutes dernières erreurs [...]. ».
 
 ![ZEP-12 (image réalisée par Blackline)](https://zestedesavoir.com/media/galleries/877/6943c548-1a50-45e4-85de-e3967a0e4444.png.960x960_q85.png)
 
