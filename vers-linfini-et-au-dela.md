@@ -19,6 +19,13 @@ Ce travail de fond était d'une ampleur si importante que malgré 9 mois de dév
 *killer features* tant pour l'interface que pour la vie du site n'ont pas pu être développées, à notre
 grande frustration.
 
+Comptons aussi le fait que transposer puis améliorer certaines fonctionnalités 
+telles que le déplacement a pris tellement de temps que nous n'avons pas pu les 
+pousser jusqu'au bout. Ainsi, vous pouvez déplacer un élément *avant* ou *après* 
+un autre mais pas *dans* un nouveau parent. Autrement dit, si vous voulez déplacer 
+un extrait dans un nouveau chapitre, il faut créer le chapitre, lui ajouter un extrait 
+vide et seulement déplacer l'extrait désiré.
+
 Le plus gros problème, en terme d'interface restera que pour vous donner la possibilité de faire
 un *tutoriel moyen* et autres structures plus souples,
 nous avons retiré le champ qui auparavant vous permettait de sélectionner "mini tuto" ou "big tuto".
