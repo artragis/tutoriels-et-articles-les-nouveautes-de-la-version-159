@@ -1,3 +1,7 @@
+[[a]]
+| Ne PAS publier cet article sans avoir au préalable créé deux sujets dans le forum, l'un pour les retours, l'autre pour les réels problèmes rencontré par les auteurs.
+| (**ne pas oublier de mettre les liens dans `que-sest-il-passe.md`**)
+
 Après une version 15.7 gaston (non gaston n'est pas un agrume, c'est juste
 qu'il est en retard) qui venait stabiliser le site, nous repartons vers les
 cieux de l'ajout de fonctionnalités (et lesquelles !) avec la 15.9 NOM, publiée

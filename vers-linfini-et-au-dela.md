@@ -54,6 +54,3 @@ Enfin, cette ZEP nous a permis de mettre à jour d'autres chantiers très import
 - la validation partielle des contenus (on ne propose à la validation qu'une partie d'un tutoriel),
 - une forte amélioration de l'éditeur du site,
 - une meilleure présentation des pages communautaires (béta, page d'aide)...
-
-Zeste de savoir n'a qu'un an et continue de prendre son envol, la ZEP-12 n'est ici qu'un souffle favorable à cet envol
-mais quel souffle !
